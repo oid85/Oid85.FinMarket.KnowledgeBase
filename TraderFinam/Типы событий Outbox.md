@@ -1,11 +1,11 @@
-1. MomentumRebalance
+### MomentumRebalance
 Ребалансировка портфеля Моментум
 
-2. MomentumSyncMonPosition
+### MomentumSyncMonPosition
 Синхронизация позиции по денежному рынку (FMMM)
 
-3. MomentumSyncPosition
+### MomentumSyncPosition
 Синхронизация позиции по тикеру
 
-4. ControlMonPosition
+### ControlMonPosition
 Проверка, можно ли докупить FMMM на остаток денежных средств в портфеле

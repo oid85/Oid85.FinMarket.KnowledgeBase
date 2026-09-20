@@ -1,4 +1,4 @@
-### MomentumRebalance
+## MomentumRebalance
 Ребалансировка портфеля Моментум
 
 #### Пример
@@ -18,16 +18,16 @@
 
 #### Обработка
 1. Перевести текущее событие **MomentumRebalance** в статус *InProgress*
-2. Перевести событие **ControlLiquidityPosition** в статус *Pause* (убираем контроль за FMMM)
+2. Перевести событие **ControlLiquidityPosition** в статус *Completed* (убираем контроль за FMMM)
 3. Добавить событие **MomentumSyncLiquidityPosition** с полями:
    - *State = New*
 4. Для каждого тикера добавить событие **MomentumSyncTickerPosition** с полями:
    - *State = New*
-5. Добавить событие **MomentumSyncLiquidityPosition** с полями:
+5. Добавить событие **ControlLiquidityPosition** с полями:
    - *State = New*
 6. Перевести текущее событие **MomentumRebalance** в статус *Completed*
 
-### MomentumSyncLiquidityPosition
+## MomentumSyncLiquidityPosition
 Синхронизация позиции по денежному рынку (FMMM)
 
 #### Пример
@@ -53,14 +53,33 @@
    1. Если текущий размер позиции отличается от целевого, то докупить или допродать до целевого размера (отправить лимитную заявку)
    2. Если равен, то перевести текущее событие **MomentumSyncLiquidityPosition** в статус *Completed*
 
-### MomentumSyncTickerPosition
+## MomentumSyncTickerPosition
 Синхронизация позиции по тикеру
 
 #### Пример
+```
+{
+  "id": "80a82306-e32a-40ae-aecc-7645d0cd0e01",
+  "source": "Momentum",
+  "type": "MomentumSyncTickerPosition",
+  "ticker": "SBER",
+  "share": "0.1",
+  "state": "New",
+  "createAt": "2026.09.20 00:00:00",
+  "updatedAt": "2026.09.20 00:00:00",
+  "completedAt": "2026.09.20 00:00:00"
+}
+```
 
 #### Обработка
+1. Если событие находится в статусе *New*, то перевести текущее событие **MomentumSyncTickerPosition** в статус *InProgress*
+2. Снять все активные заявки по тикеру, если они есть
+3. Получить текущую стоимость портфеля
+4. Расчитать целевой размер позиции
+   1. Если текущий размер позиции отличается от целевого, то докупить или допродать до целевого размера (отправить лимитную заявку)
+   2. Если равен, то перевести текущее событие **MomentumSyncTickerPosition** в статус *Completed*
 
-### ControlLiquidityPosition
+## ControlLiquidityPosition
 Проверка, можно ли докупить FMMM на остаток денежных средств в портфеле
 
 #### Пример

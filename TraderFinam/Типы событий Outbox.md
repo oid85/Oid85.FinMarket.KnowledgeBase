@@ -5,7 +5,6 @@
 ```
 {
   "id": "80a82306-e32a-40ae-aecc-7645d0cd0e01",
-  "order": null,
   "source": "Momentum",
   "type": "MomentumRebalance",
   "ticker": "SBER;LKOH;NVTK;FMMM",
@@ -22,13 +21,10 @@
 2. Перевести событие **ControlLiquidityPosition** в статус *Pause* (убираем контроль за FMMM)
 3. Добавить событие **MomentumSyncLiquidityPosition** с полями:
    - *State = New*
-   - *Order = 1*
 4. Для каждого тикера добавить событие **MomentumSyncTickerPosition** с полями:
    - *State = New*
-   - *Order* - следующий в порядке возрастания
 5. Добавить событие **MomentumSyncLiquidityPosition** с полями:
    - *State = New*
-   - *Order* - следующий в порядке возрастания
 6. Перевести текущее событие **MomentumRebalance** в статус *Completed*
 
 ### MomentumSyncLiquidityPosition
@@ -38,7 +34,6 @@
 ```
 {
   "id": "80a82306-e32a-40ae-aecc-7645d0cd0e01",
-  "order": null,
   "source": "Momentum",
   "type": "MomentumSyncLiquidityPosition",
   "ticker": "FMMM",

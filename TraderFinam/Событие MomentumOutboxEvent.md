@@ -3,7 +3,6 @@ MomentumOutboxEvent
 ```
 {
   "id": "80a82306-e32a-40ae-aecc-7645d0cd0e01",
-  "order": 1,
   "source": "Momentum",
   "type": "MomentumSyncTickerPosition",
   "ticker": "SBER",

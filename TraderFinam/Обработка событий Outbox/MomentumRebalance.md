@@ -18,11 +18,12 @@
 
 #### Обработка
 1. Перевести текущее событие **MomentumRebalance** в статус *InProgress*
-2. Перевести событие **ControlLiquidityPosition** в статус *Completed* (убираем контроль за FMMM)
-3. Добавить событие **MomentumSyncLiquidityPosition** с полями:
+2. Снять все активные заявки
+3. Перевести событие **ControlLiquidityPosition** в статус *Completed* (убираем контроль за FMMM)
+4. Добавить событие **MomentumSyncLiquidityPosition** с полями:
    - *State = New*
-4. Для каждого тикера добавить событие **MomentumSyncTickerPosition** с полями:
+5. Для каждого тикера добавить событие **MomentumSyncTickerPosition** с полями:
    - *State = New*
-5. Добавить событие **ControlLiquidityPosition** с полями:
+6. Добавить событие **ControlLiquidityPosition** с полями:
    - *State = New*
-6. Перевести текущее событие **MomentumRebalance** в статус *Completed*
+7. Перевести текущее событие **MomentumRebalance** в статус *Completed*

@@ -16,7 +16,7 @@
     {
       "id": "80a82306-e32a-40ae-aecc-7645d0cd0e01",
       "source": "Momentum",
-      "type": "SyncTicker",
+      "type": "SyncTickerSize",
       "ticker": "SBER",      
       "targetSize": "100",
       "state": "New",

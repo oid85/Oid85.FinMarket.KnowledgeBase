@@ -1,14 +1,14 @@
-## SyncTicker
-Синхронизация позиции по тикеру
+## SyncTickerStop
+Синхронизация стопа по тикеру
 
 #### Пример
 ```
 {
   "id": "80a82306-e32a-40ae-aecc-7645d0cd0e01",
   "source": "Momentum",
-  "type": "SyncTicker",
+  "type": "SyncTickerStop",
   "ticker": "SBER",
-  "targetSize": "100",
+  "stopPrice": 210.0,
   "state": "New",
   "createAt": "2026.09.20 00:00:00",
   "updatedAt": "2026.09.20 00:00:00",

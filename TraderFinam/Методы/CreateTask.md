@@ -8,7 +8,7 @@
 ```
 {
   "source": "Momentum",
-  "type": "SyncTicker",
+  "type": "SyncTickerSize",
   "ticker": "SBER",
   "targetSize": "100",
   "state": "New"  

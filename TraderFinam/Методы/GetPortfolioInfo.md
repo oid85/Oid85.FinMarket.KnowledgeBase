@@ -12,12 +12,22 @@
 Ответ:
 ```
 {
-    "totalSum": 904156.35,
+    "totalSum": 909536.54,
+    "money": 156.05,
     "positions": [
       {
-        "ticker": "NVTK",
-        "size": 85,
-        "cost": 90644
+        "ticker": "HEAD",
+        "size": 31,
+        "cost": 89993,
+        "currentPrice": 2903,
+        "dailyPnl": 434
+      },
+      {
+        "ticker": "FMMM",
+        "size": 26554,
+        "cost": 368702.29,
+        "currentPrice": 13.885,
+        "dailyPnl": 132.77
       }
     ]
   }

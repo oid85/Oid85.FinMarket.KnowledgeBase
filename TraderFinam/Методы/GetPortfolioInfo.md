@@ -14,6 +14,7 @@
 {
   "totalSum": 909536.54,
   "money": 156.05,
+  "totalDailyPnl": 9095.04,
   "positions": [
     {
       "ticker": "HEAD",

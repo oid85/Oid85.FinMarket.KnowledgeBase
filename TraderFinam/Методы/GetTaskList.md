@@ -1,8 +1,8 @@
-### GetTasks
+### GetTaskList
 
 Метод получения текущих заданий outbox
 
-*api/trader-finam/get-tasks*
+*api/trader-finam/task/list*
 
 Запрос:
 ```

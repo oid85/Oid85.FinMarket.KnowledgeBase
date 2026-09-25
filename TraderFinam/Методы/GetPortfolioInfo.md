@@ -5,12 +5,12 @@
 *api/trader-finam/portfolio-info*
 
 Запрос:
-```
+```json
 {}
 ```
 
 Ответ:
-```
+```json
 {
   "totalSum": 909536.54,
   "money": 156.05,

@@ -5,7 +5,7 @@
 *api/trader-finam/task/create*
 
 Запрос:
-```
+```json
 {
   "source": "Momentum",
   "type": "SyncTickerSize",
@@ -16,6 +16,6 @@
 ```
 
 Ответ:
-```
+```json
 {}
 ```

@@ -5,12 +5,12 @@
 *api/trader-finam/task/list*
 
 Запрос:
-```
+```json
 {}
 ```
 
 Ответ:
-```
+```json
 {
   "tasks": [
     {

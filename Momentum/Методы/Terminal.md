@@ -12,50 +12,54 @@
   "totalDailyPnl": 9095.04,  
   "terminalRows": [
     "ticker": "HEAD",
-    "calculatedPosition": {
+    "targetPosition": {
       "show": true,
       "size": 100,
-      "colorFill": "#C1F5C1/#FA8072"
+      "colorFill": ""
     },
     "lifePosition": {
       "show": true,
       "size": 31,
+      "colorFill": "",
       "cost": 89993,
       "currentPrice": 2903,
-      "dailyPnl": 434,
-      "colorFill": "#C1F5C1/#FA8072"
+      "dailyPnl": 434
     },
     "syncSizeButton": {
       "show": true,
       "title": "Увеличить/Уменьшить/Закрыть",
-      "colorFill": "#C1F5C1/#FA8072",
+      "colorFill": "",
       "task": "SyncTickerSize"
     },  
-    "calculatedStop": {
+    "targetStop": {
       "show": true,
       "size": 31,      
       "stopPrice": 2903,
-      "colorFill": "#FAFFB8"      
+      "colorFill": ""      
     },
     "lifeStop": {
       "show": true,
       "size": 31,      
       "stopPrice": 2903,       
-      "colorFill": "#FAFFB8" 
+      "colorFill": "" 
     },      
     "syncStopButton": {
       "show": true,
       "title": "Установить/Снять/Синхронизовать",
-      "colorFill": "#FAFFB8",
+      "colorFill": "",
       "task": "SyncTickerStop"
     },
     "syncTickerSizeTask": {
       "show": true,
-      "colorFill": "#C1F5C1"
+      "state": "New",
+      "colorFill": "",
+      "task": "SyncTickerSize"
     },      
     "syncTickerStopTask": {
       "show": true,
-      "colorFill": "#C1F5C1"
+      "state": "New",
+      "colorFill": "",
+      "task": "SyncTickerStop"
     },           
   ]
 }

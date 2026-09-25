@@ -45,7 +45,7 @@
     },      
     "syncStopButton": {
       "show": true,
-      "title": "Установить/Снять/Синхронизовать",
+      "title": "Установить/Снять/Изменить",
       "colorFill": "",
       "task": "SyncTickerStop"
     },

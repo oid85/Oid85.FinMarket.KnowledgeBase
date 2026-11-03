@@ -2,7 +2,7 @@
 
 Метод получения терминала управления портфелем
 
-*api/trader-finam/task/cancel*
+*api/momentum/terminal/version*
 
 Запрос:
 ```json
